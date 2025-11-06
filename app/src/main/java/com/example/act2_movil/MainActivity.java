@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
         });
         //·················································· FIN IDE CODIGO
 
-        //seleccion buttom al que le puse la id navegacion_segunda
+        //seleccion buttom/imagebutton al que le puse la id navegacion_segunda
         Button navegacion_irSegundo = findViewById(R.id.navegacion_segunda);//ID EN ACTIVITY_INICIO
         navegacion_irSegundo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View vista){
-                Intent intent = new Intent(MainActivity.this, InicioActivity.class);
+                Intent intent = new Intent(MainActivity.this, InicioActivity.class);//De donde vengo y hacia donde voy
                 startActivity(intent);
             }
         });

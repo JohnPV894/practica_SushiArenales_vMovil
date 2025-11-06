@@ -9,13 +9,59 @@
     tools:context=".MainActivity">
 
 
-    <ImageButton
-        android:id="@+id/navegacion_segunda"
-        android:layout_width="101dp"
-        android:layout_height="104dp"
-        app:srcCompat="@drawable/flechader"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="553dp" />
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="693dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#FF0000"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="615dp">
 
 
+            <Button
+                android:id="@+id/navegacion_segunda"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="532dp"
+                android:layout_marginEnd="24dp"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Contenido del contenedor -->
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/redondear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo_inicio"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="310dp"
+                android:layout_height="94dp"
+                android:text="bienvenido al buffed de sushi mejor valorado de la ciudad aqui podras encontrar todo lo que buscas y mas en el mejor resta"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
