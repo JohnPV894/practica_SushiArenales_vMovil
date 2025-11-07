@@ -10,8 +10,8 @@
 
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="693dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -24,44 +24,32 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="615dp">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/redondear"
+            android:contentDescription="Logo de tienda"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/inicio_logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="230dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:text="@string/texto_inicio"
+            android:textSize="15dp" />
 
 
-            <Button
-                android:id="@+id/navegacion_segunda"
-                android:layout_width="141dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="532dp"
-                android:layout_marginEnd="24dp"
-                android:text="Button"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <!-- Contenido del contenedor -->
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:background="@drawable/redondear"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/logo_inicio"
-                tools:layout_editor_absoluteY="111dp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="310dp"
-                android:layout_height="94dp"
-                android:text="bienvenido al buffed de sushi mejor valorado de la ciudad aqui podras encontrar todo lo que buscas y mas en el mejor resta"
-                tools:layout_editor_absoluteX="59dp"
-                tools:layout_editor_absoluteY="348dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/navegacion_segunda"
+            android:layout_width="68dp"
+            android:layout_height="74dp"
+            android:layout_gravity="end"
+            android:width="202dp"
+            android:drawableLeft="@drawable/flechaizq"
+            app:backgroundTint="#FF0404" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
