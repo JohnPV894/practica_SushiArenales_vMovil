@@ -8,6 +8,13 @@
 
 
 
+
+    <string name="mesas">Ir a Elegir mesa</string>
+    <string name="texto_inicio">Bienvenido al buffed de sushi mejor valorado de la ciudad aqui podras encontrar todo lo que buscas y mas en el mejor resta</string>
+    <string name="textoDescriptivo_inicio_imgLogo">Logo de tienda la Sushi Arenales</string>
+    <string name="textoDescriptivo_inicio_Boton">Ir a la siguiente vista donde elegiras mesa</string>
+
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -23,6 +30,4 @@
 
 
     </string>
-    <string name="mesas">Ir a Elegir mesa</string>
-    <string name="texto_inicio">bienvenido al buffed de sushi mejor valorado de la ciudad aqui podras encontrar todo lo que buscas y mas en el mejor resta</string>
 </resources>

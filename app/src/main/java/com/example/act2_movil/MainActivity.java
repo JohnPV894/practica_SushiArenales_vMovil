@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         //·················································· FIN IDE CODIGO
 
         //seleccion buttom/imagebutton al que le puse la id navegacion_segunda
-        Button navegacion_irSegundo = findViewById(R.id.navegacion_segunda);//ID EN ACTIVITY_INICIO
+        ImageButton navegacion_irSegundo = findViewById(R.id.navegacion_segunda);//ID EN ACTIVITY_INICIO
         navegacion_irSegundo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View vista){

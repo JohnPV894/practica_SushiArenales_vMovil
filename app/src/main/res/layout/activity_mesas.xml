@@ -9,8 +9,8 @@
 
 
     <LinearLayout
-        android:layout_width="209dp"
-        android:layout_height="205dp"
+        android:layout_width="217dp"
+        android:layout_height="372dp"
         android:layout_marginTop="266dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,13 +18,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <ImageButton
+            android:id="@+id/mesa1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/redondear"
+            android:scaleType="fitCenter"
+            app:backgroundTint="#FF0404"
+            app:srcCompat="@drawable/comedor" />
+
+        <ImageButton
+            android:id="@+id/mesa2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/redondear"
+            android:scaleType="fitCenter"
+            app:backgroundTint="#FF0404"
+            app:srcCompat="@drawable/comedor" />
+
+        <ImageButton
+            android:id="@+id/mesa3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/redondear"
+            android:scaleType="fitCenter"
+            app:backgroundTint="#FF0404"
+            app:srcCompat="@drawable/comedor" />
+
+        <ImageButton
+            android:id="@+id/mesa4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/redondear"
+            android:scaleType="fitCenter"
+            app:backgroundTint="#FF0404"
+            app:srcCompat="@drawable/comedor" />
+
+        <ImageButton
+            android:id="@+id/mesa5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/redondear"
+            android:scaleType="fitCenter"
+            app:backgroundTint="#FF0404"
+            app:srcCompat="@drawable/comedor" />
+        <!--
+                <Button
             android:id="@+id/mesa1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mesa1" />
-
-        <Button
+                   <Button
             android:id="@+id/mesa2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,11 +85,15 @@
             android:layout_height="wrap_content"
             android:text="Mesa3" />
 
+
         <Button
             android:id="@+id/mesa4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mesa4" />
+
+        -->
+
 
     </LinearLayout>
 

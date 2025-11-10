@@ -2,6 +2,7 @@ package com.example.act2_movil;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,10 +33,10 @@ public class InicioActivity extends AppCompatActivity {
 ajusta la ventana para que no se oculte detras de los insets como la barra de estado o noticaciones.*/
 
         //Botones para seleccionar mesa
-        Button boton_mesa1 = findViewById(R.id.mesa1);
-        Button boton_mesa2 = findViewById(R.id.mesa2);
-        Button boton_mesa3 = findViewById(R.id.mesa3);
-        Button boton_mesa4 = findViewById(R.id.mesa4);
+        ImageButton boton_mesa1 = findViewById(R.id.mesa1);
+        ImageButton boton_mesa2 = findViewById(R.id.mesa2);
+        ImageButton boton_mesa3 = findViewById(R.id.mesa3);
+        ImageButton boton_mesa4 = findViewById(R.id.mesa4);
 
         //Crear funcion para ejecutar una peticion POST y que acepte como parametro un numero (id de mesa)
 
