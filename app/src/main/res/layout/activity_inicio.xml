@@ -5,8 +5,8 @@
     android:id="@+id/inicio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#D39999"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
 
 
     <LinearLayout
@@ -20,7 +20,7 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/materialToolbar"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
+            android:layout_height="90dp"
             android:background="#d23737"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme" />
@@ -32,34 +32,31 @@
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="80dp"
-            android:background="@drawable/redondear"
-            android:backgroundTint="#fefcf3"
+            android:background="@drawable/redondear_logo"
             android:contentDescription="@string/textoDescriptivo_inicio_imgLogo"
             app:srcCompat="@drawable/inicio_logo" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="271dp"
+            android:layout_width="279dp"
             android:layout_height="118dp"
             android:layout_gravity="center"
             android:layout_marginBottom="100dp"
+            android:justificationMode="inter_word"
             android:text="@string/texto_inicio"
-            android:textSize="19.9sp"
-            android:justificationMode="inter_word"/>
-
-
+            android:textSize="20sp" />
 
 
         <ImageButton
             android:id="@+id/navegacion_segunda"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/textoDescriptivo_inicio_Boton"
             android:scaleType="fitCenter"
             android:background="@drawable/redondear"
             android:layout_gravity="center"
             android:layout_marginStart="94dp"
-            app:srcCompat="@drawable/flechaizq1"
+            app:srcCompat="@drawable/flechaderecha"
             app:backgroundTint="#d23737"/>
 
     </LinearLayout>

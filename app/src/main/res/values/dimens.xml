@@ -1,3 +1,5 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn_mesa_margin">20dp</dimen>
+    <dimen name="boton_mesa_tamaño_h_w">140dp</dimen>
+    <dimen name="margin_der_izq_btn_mesa">20dp</dimen>
 </resources>

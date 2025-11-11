@@ -9,104 +9,169 @@
 
 
     <LinearLayout
-        android:layout_width="217dp"
-        android:layout_height="372dp"
-        android:layout_marginTop="266dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/mesa1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:background="@drawable/redondear"
-            android:scaleType="fitCenter"
-            app:backgroundTint="#FF0404"
-            app:srcCompat="@drawable/comedor" />
-
-        <ImageButton
-            android:id="@+id/mesa2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:background="@drawable/redondear"
-            android:scaleType="fitCenter"
-            app:backgroundTint="#FF0404"
-            app:srcCompat="@drawable/comedor" />
-
-        <ImageButton
-            android:id="@+id/mesa3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:background="@drawable/redondear"
-            android:scaleType="fitCenter"
-            app:backgroundTint="#FF0404"
-            app:srcCompat="@drawable/comedor" />
-
-        <ImageButton
-            android:id="@+id/mesa4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:background="@drawable/redondear"
-            android:scaleType="fitCenter"
-            app:backgroundTint="#FF0404"
-            app:srcCompat="@drawable/comedor" />
-
-        <ImageButton
-            android:id="@+id/mesa5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:background="@drawable/redondear"
-            android:scaleType="fitCenter"
-            app:backgroundTint="#FF0404"
-            app:srcCompat="@drawable/comedor" />
-        <!--
-                <Button
-            android:id="@+id/mesa1"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mesa1" />
-                   <Button
-            android:id="@+id/mesa2"
+            android:layout_height="125dp"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d23737"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <ImageButton
+                android:id="@+id/volver_inicio"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start"
+                android:scaleType="fitCenter"
+                android:background="@drawable/redondear"
+                android:backgroundTint="#db4747"
+                android:layout_margin="11dp"
+                android:contentDescription="@string/textoDescriptivo_mesas_Boton1"
+                app:srcCompat="@drawable/flechaizquierda"
+                />
+
+            <ImageView
+                android:id="@+id/imageButton3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end"
+                android:background="@drawable/redondear_logo"
+                android:backgroundTint="#fefcf3"
+                android:contentDescription="@string/textoDescriptivo_inicio_imgLogo"
+                android:scaleType="fitCenter"
+                android:layout_margin="11dp"
+                app:srcCompat="@drawable/inicio_logo"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mesa2" />
+            android:layout_height="143dp">
 
-        <Button
-            android:id="@+id/mesa3"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Elegir Mesa"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mesa3" />
+            android:layout_height="178dp">
 
+            <ImageButton
+                android:id="@+id/mesa1"
+                android:layout_width="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_height="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/btn_mesa_margin"
+                android:background="@drawable/redondear"
+                android:contentDescription="mesa numero 1"
+                android:scaleType="fitCenter"
+                app:backgroundTint="#ed5454"
+                app:srcCompat="@drawable/comedor"
+                tools:layout_editor_absoluteX="79dp" />
 
-        <Button
-            android:id="@+id/mesa4"
+            <ImageButton
+                android:id="@+id/mesa2"
+                android:layout_width="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_height="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/btn_mesa_margin"
+                android:background="@drawable/redondear"
+                android:contentDescription="mesa numero 2"
+                android:scaleType="fitCenter"
+                app:backgroundTint="#ed5454"
+                app:srcCompat="@drawable/comedor"
+                tools:layout_editor_absoluteX="79dp" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mesa4" />
+            android:layout_height="172dp">
 
-        -->
+            <ImageButton
+                android:id="@+id/mesa3"
+                android:layout_width="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_height="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/btn_mesa_margin"
+                android:background="@drawable/redondear"
+                android:contentDescription="mesa numero 3"
+                android:scaleType="fitCenter"
+                app:backgroundTint="#ed5454"
+                app:srcCompat="@drawable/comedor"
+                tools:layout_editor_absoluteX="79dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp">
+
+            <ImageButton
+                android:id="@+id/mesa4"
+                android:layout_width="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_height="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/btn_mesa_margin"
+                android:background="@drawable/redondear"
+                android:contentDescription="mesa numero 4"
+                android:scaleType="fitCenter"
+                app:backgroundTint="#ed5454"
+                app:srcCompat="@drawable/comedor"
+                tools:layout_editor_absoluteX="79dp" />
+
+            <ImageButton
+                android:id="@+id/mesa5"
+                android:layout_width="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_height="@dimen/boton_mesa_tamaño_h_w"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/btn_mesa_margin"
+                android:background="@drawable/redondear"
+                android:contentDescription="mesa numero 5"
+                android:scaleType="fitCenter"
+                app:backgroundTint="#ed5454"
+                app:srcCompat="@drawable/comedor"
+                tools:layout_editor_absoluteX="79dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_mesas_texto"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textColor="#adadad"
+                android:justificationMode="inter_word"
+                />
+        </FrameLayout>
 
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="Elegir Mesa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 
