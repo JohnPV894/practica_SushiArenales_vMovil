@@ -51,17 +51,17 @@ ajusta la ventana para que no se oculte detras de los insets como la barra de es
         ImageButton boton_mesa4 = findViewById(R.id.mesa4);
 
         //Crear funcion para ejecutar una peticion POST y que acepte como parametro un numero (id de mesa)
-//        boton_mesa1.setOnClickListener(new View.OnClickListener(){
-//
-//            @Override
-//            public void onClick (View vista){
-//                //Logica para hacer la peticion POST
-//
-//                //FIN
-//                Intent intent = new Intent(InicioActivity.this, PlatosActivity.class);//De donde vengo y hacia donde voy
-//                startActivity(intent);
-//            }
-//        });
+        boton_mesa1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick (View vista){
+                //Logica para hacer la peticion POST
+
+                //FIN
+                Intent intent = new Intent(InicioActivity.this, PlatosActivity.class);//De donde vengo y hacia donde voy
+                startActivity(intent);
+            }
+        });
 
 
     }

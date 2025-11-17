@@ -4,8 +4,11 @@
       <w>aqui</w>
       <w>boton</w>
       <w>buscas</w>
+      <w>cliente</w>
+      <w>comedor</w>
       <w>descriptivo</w>
       <w>donde</w>
+      <w>elegir</w>
       <w>elegiras</w>
       <w>encontrar</w>
       <w>inicio</w>
@@ -18,7 +21,9 @@
       <w>resta</w>
       <w>rojo</w>
       <w>salvada</w>
+      <w>tamaño</w>
       <w>texto</w>
+      <w>volver</w>
     </words>
   </dictionary>
 </component>

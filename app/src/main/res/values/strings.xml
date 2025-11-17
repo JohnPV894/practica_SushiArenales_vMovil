@@ -14,7 +14,7 @@
     <!--String de  mesas.xml -->
     <string name="textoDescriptivo_mesas_Boton1">Volver a la vista anterior</string>
     <string name="footer_mesas_texto">Las mesas en rojo estan ocupadas, mientras que las mesas libres  se muestran en blanco</string>
-
+    <string name="textoDescriptivo_producto">Imagen del producto</string>
 
 
 </resources>

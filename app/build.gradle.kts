@@ -47,4 +47,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // PARA LA CONEXIÓN A LA API (Retrofit y Gson)
+
+    // Librería de Retrofit
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+
+    // Conversor de JSON a objetos Java (usando Gson)
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 }
