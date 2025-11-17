@@ -20,7 +20,6 @@ public class ProductoAdaptador extends RecyclerView.Adapter<ProductoAdaptador.Vi
     private List<Producto> listaProductos;
     private Context contexto;
 
-    // 2. Constructor ajustado
     public ProductoAdaptador(List<Producto> listaProductos, Context contexto) {
         this.listaProductos = listaProductos;
         this.contexto = contexto;
@@ -36,18 +35,14 @@ public class ProductoAdaptador extends RecyclerView.Adapter<ProductoAdaptador.Vi
     }
 
     @Override
-    // Referencia del ViewHolder corregida
     public void onBindViewHolder(@NonNull VistaProductoHolder holder, int position) {
         Producto productoActual = listaProductos.get(position);
 
-        // Asignación de texto
         holder.textoNombre.setText(productoActual.getNombre());
         holder.textoDescripcion.setText(productoActual.getDescripcion());
 
-        // Formateo de precio (asumiendo que precio es un int y queremos un formato €/$)
         holder.textoPrecio.setText(String.format("$%.2f", (double) productoActual.getPrecio() ));
 
-        // Cargar la imagen con Glide
         Glide.with(contexto)
                 .load(productoActual.getUrlImagen())
                 // añade una imagen de error para el usuario
@@ -60,23 +55,19 @@ public class ProductoAdaptador extends RecyclerView.Adapter<ProductoAdaptador.Vi
         return listaProductos.size();
     }
 
-    // Función adicional en español para actualizar los datos
     public void actualizarListaProductos(List<Producto> nuevosProductos) {
         this.listaProductos = nuevosProductos;
         notifyDataSetChanged();
     }
 
-    // 5. Clase ViewHolder renombrada y ajustada
     public static class VistaProductoHolder extends RecyclerView.ViewHolder {
 
-        // Declaración de variables en español
         TextView textoNombre, textoDescripcion, textoPrecio;
         ImageView imagenProducto;
 
         public VistaProductoHolder(@NonNull View vistaItem) {
             super(vistaItem);
 
-            // Definiciones (asegúrate de que estos IDs existan en item_producto.xml)
             textoNombre = vistaItem.findViewById(R.id.txtNombre);
             textoDescripcion = vistaItem.findViewById(R.id.txtDescripcion);
             textoPrecio = vistaItem.findViewById(R.id.txtPrecio);
